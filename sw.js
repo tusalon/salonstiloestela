@@ -1,22 +1,22 @@
-// sw.js - Service Worker para YY salón
+// sw.js - Service Worker para Salon Estilo Estela
 
-const CACHE_NAME = 'yy-saln-v1';
+const CACHE_NAME = 'salon-estilo-estela-v1';
 const urlsToCache = [
-  '/yy-saln/',
-  '/yy-saln/index.html',
-  '/yy-saln/admin.html',
-  '/yy-saln/admin-login.html',
-  '/yy-saln/setup-wizard.html',
-  '/yy-saln/editar-negocio.html',
-  '/yy-saln/manifest.json',
-  '/yy-saln/icons/icon-72x72.png',
-  '/yy-saln/icons/icon-96x96.png',
-  '/yy-saln/icons/icon-128x128.png',
-  '/yy-saln/icons/icon-144x144.png',
-  '/yy-saln/icons/icon-152x152.png',
-  '/yy-saln/icons/icon-192x192.png',
-  '/yy-saln/icons/icon-384x384.png',
-  '/yy-saln/icons/icon-512x512.png'
+  '/salon-estilo-estela/',
+  '/salon-estilo-estela/index.html',
+  '/salon-estilo-estela/admin.html',
+  '/salon-estilo-estela/admin-login.html',
+  '/salon-estilo-estela/setup-wizard.html',
+  '/salon-estilo-estela/editar-negocio.html',
+  '/salon-estilo-estela/manifest.json',
+  '/salon-estilo-estela/icons/icon-72x72.png',
+  '/salon-estilo-estela/icons/icon-96x96.png',
+  '/salon-estilo-estela/icons/icon-128x128.png',
+  '/salon-estilo-estela/icons/icon-144x144.png',
+  '/salon-estilo-estela/icons/icon-152x152.png',
+  '/salon-estilo-estela/icons/icon-192x192.png',
+  '/salon-estilo-estela/icons/icon-384x384.png',
+  '/salon-estilo-estela/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/yy-saln/icons/icon-192x192.png');
+            return caches.match('/salon-estilo-estela/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para YY salón');
+console.log('✅ Service Worker configurado para Salon Estilo Estela');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);

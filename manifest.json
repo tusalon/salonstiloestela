@@ -1,20 +1,20 @@
 {
-  "name": "YY salón",
-  "short_name": "YY",
+  "name": "Salon Estilo Estela",
+  "short_name": "Salon",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/yy-saln/",
-  "scope": "/yy-saln/",
+  "start_url": "/salon-estilo-estela/",
+  "scope": "/salon-estilo-estela/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/yy-saln/icons/icon-192x192.png",
+      "src": "/salon-estilo-estela/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/yy-saln/icons/icon-512x512.png",
+      "src": "/salon-estilo-estela/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
